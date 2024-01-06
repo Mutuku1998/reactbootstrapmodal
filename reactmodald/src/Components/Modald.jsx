@@ -16,7 +16,7 @@ const handleShow = () =>{
 }
   return (
     <>
-    <div className="d-flex align-items-center justify-content-center vh-100">
+    <div className="d-flex align-items-center justify-content-center ">
     <div className='formbox'>
    <form>
   <div class="form-group">

@@ -5,10 +5,10 @@ import Modald from './Components/Modald';
 
 function App() {
   return (
-   <>
+   <div className='app'>
    <Header/>
    <Modald/>
-   </>
+   </div>
   );
 }
 
