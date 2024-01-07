@@ -2,15 +2,15 @@ import React from "react";
 import logo from "../../assets/oryxlogo.png";
 import img1 from '../../assets/qatar1.webp';
 import img2 from '../../assets/qatar2.webp';
-import img3 from '../../assets/qatar4.webp'
+import img3 from '../../assets/image3.jpg'
 import '../../styles/slider.css'
 const Slider = () => {
   return (
     <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img src={logo} alt="" style={{ width: "50px", height: "50px" }} />
+            <img src={logo} alt="" style={{ width: "50px", height: "50px",borderRadius:'50%' }} />
           </a>
           <button
             class="navbar-toggler"
@@ -50,21 +50,21 @@ const Slider = () => {
               </li>
 
               <li className="nav-item">
-                <a className="getaccount" href="">
-                  Login
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="getaccount" href="">
-                sign up
-                </a>
-              </li>
+    <div className="getaccount" href="">
+    <i className="ri-account-circle-line" style={{ fontSize: '18px', marginRight: '5px' }}></i>
+        <span >Login</span>
+        <span className="vertical-line"></span> 
+        <span>Register</span>
+    </div>
+</li>
+
+            
             </ul>
           </div>
         </div>
       </nav>
 
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-hover="false" >
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000" data-bs-hover="false" >
       <div class="carousel-indicators d-none d-sm-flex">
   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -74,23 +74,26 @@ const Slider = () => {
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src={img1} class="d-block w-100" alt="..."/>
-      <div class="carousel-caption ">
-        <h5 className="animated fadeInDown" style={{animationDelay:'1s'}}>First slide label</h5>
+      <div class="carousel-caption text-start ">
+        <h5 className="animated fadeInDown" style={{animationDelay:'1s'}}>Welcome To Oryx visa limited</h5>
         <p className="animated fadeInDown" style={{animationDelay:'1s'}}>Some representative placeholder content for the first slide.</p>
+        <button className="animatedbtn"> Book now</button>
       </div>
     </div>
     <div class="carousel-item">
       <img src={img2} class="d-block w-100" alt="..."/>
-      <div class="carousel-caption ">
-        <h5 className="animated fadeInDown" style={{animationDelay:'1s'}}>Second slide label</h5>
-        <p className="animated fadeInDown" style={{animationDelay:'1s'}}>Some representative placeholder content for the second slide.</p>
+      <div class="carousel-caption text-start ">
+        <h5 className="animated fadeInDown" style={{animationDelay:'1s'}}>Welcome To Oryx visa limited</h5>
+        <p className="animated fadeInDown" style={{animationDelay:'1s'}}>Some representative placeholder content for the first slide.</p>
+        <button className="animatedbtn"> Book now</button>
       </div>
     </div>
     <div class="carousel-item">
       <img src={img3} class="d-block w-100" alt="..."/>
-      <div class="carousel-caption ">
-        <h5 className="animated fadeInDown" style={{animationDelay:'1s'}}>Third slide label</h5>
-        <p className="animated fadeInDown" style={{animationDelay:'1s'}}>Some representative placeholder content for the third slide.</p>
+      <div class="carousel-caption text-start ">
+        <h5 className="animated fadeInDown" style={{animationDelay:'1s'}}>Welcome To Oryx visa limited</h5>
+        <p className="animated fadeInDown" style={{animationDelay:'1s'}}>Some representative placeholder content for the first slide.</p>
+        <button className="animatedbtn"> Book now</button>
       </div>
     </div>
   </div>
