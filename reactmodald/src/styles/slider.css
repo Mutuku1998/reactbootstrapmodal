@@ -106,6 +106,10 @@ color: #fff;
 .navbar {
     background-color: #640333;
 }
+
+.text-wrapper{
+    margin: 5px 30px;
+}
 @media only screen and (max-width:768px) {
 
 .navbar-nav{

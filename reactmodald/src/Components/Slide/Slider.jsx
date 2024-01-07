@@ -1,16 +1,22 @@
-import React from "react";
+import React  from 'react';
 import logo from "../../assets/oryxlogo.png";
-import img1 from '../../assets/qatar1.webp';
-import img2 from '../../assets/qatar2.webp';
-import img3 from '../../assets/image3.jpg'
-import '../../styles/slider.css'
+import img1 from "../../assets/qatar1.webp";
+import img2 from "../../assets/qatar2.webp";
+import img3 from "../../assets/image3.jpg";
+import "../../styles/slider.css";
+import Marquee from "react-fast-marquee";
+import MyMarquee from '../MyMarquee';
 const Slider = () => {
   return (
     <div>
       <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img src={logo} alt="" style={{ width: "50px", height: "50px",borderRadius:'50%' }} />
+            <img
+              src={logo}
+              alt=""
+              style={{ width: "50px", height: "50px", borderRadius: "50%" }}
+            />
           </a>
           <button
             class="navbar-toggler"
@@ -50,63 +56,116 @@ const Slider = () => {
               </li>
 
               <li className="nav-item">
-    <div className="getaccount" href="">
-    <i className="ri-account-circle-line" style={{ fontSize: '18px', marginRight: '5px' }}></i>
-        <span >Login</span>
-        <span className="vertical-line"></span> 
-        <span>Register</span>
-    </div>
-</li>
-
-            
+                <div className="getaccount" href="">
+                  <i
+                    className="ri-account-circle-line"
+                    style={{ fontSize: "18px", marginRight: "5px" }}
+                  ></i>
+                  <span>Login</span>
+                  <span className="vertical-line"></span>
+                  <span>Register</span>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
 
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000" data-bs-hover="false" >
-      <div class="carousel-indicators d-none d-sm-flex">
-  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-</div>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="6000"
+        data-bs-hover="false"
+      >
+        <div class="carousel-indicators d-none d-sm-flex">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
 
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src={img1} class="d-block w-100" alt="..."/>
-      <div class="carousel-caption text-start ">
-        <h5 className="animated fadeInDown" style={{animationDelay:'1s'}}>Welcome To Oryx visa limited</h5>
-        <p className="animated fadeInDown" style={{animationDelay:'1s'}}>Some representative placeholder content for the first slide.</p>
-        <button className="animatedbtn"> Book now</button>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src={img1} class="d-block w-100" alt="..." />
+            <div class="carousel-caption text-start ">
+              <h5
+                className="animated fadeInDown"
+                style={{ animationDelay: "1s" }}
+              >
+                Welcome To Oryx visa limited
+              </h5>
+              <p
+                className="animated fadeInDown"
+                style={{ animationDelay: "1s" }}
+              >
+                Some representative placeholder content for the first slide.
+              </p>
+              <button className="animatedbtn"> Book now</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src={img2} class="d-block w-100" alt="..." />
+            <div class="carousel-caption text-start ">
+              <h5
+                className="animated fadeInDown"
+                style={{ animationDelay: "1s" }}
+              >
+                Welcome To Oryx visa limited
+              </h5>
+              <p
+                className="animated fadeInDown"
+                style={{ animationDelay: "1s" }}
+              >
+                Some representative placeholder content for the first slide.
+              </p>
+              <button className="animatedbtn"> Book now</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src={img3} class="d-block w-100" alt="..." />
+            <div class="carousel-caption text-start ">
+              <h5
+                className="animated fadeInDown"
+                style={{ animationDelay: "1s" }}
+              >
+                Welcome To Oryx visa limited
+              </h5>
+              <p
+                className="animated fadeInDown"
+                style={{ animationDelay: "1s" }}
+              >
+                Some representative placeholder content for the first slide.
+              </p>
+              <button className="animatedbtn"> Book now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos provident
+        quaerat, odio adipisci magnam ad consequuntur qui amet optio nesciunt
+        architecto nulla cupiditate voluptate ea cumque natus, sed assumenda
+        eum!
       </div>
     </div>
-    <div class="carousel-item">
-      <img src={img2} class="d-block w-100" alt="..."/>
-      <div class="carousel-caption text-start ">
-        <h5 className="animated fadeInDown" style={{animationDelay:'1s'}}>Welcome To Oryx visa limited</h5>
-        <p className="animated fadeInDown" style={{animationDelay:'1s'}}>Some representative placeholder content for the first slide.</p>
-        <button className="animatedbtn"> Book now</button>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src={img3} class="d-block w-100" alt="..."/>
-      <div class="carousel-caption text-start ">
-        <h5 className="animated fadeInDown" style={{animationDelay:'1s'}}>Welcome To Oryx visa limited</h5>
-        <p className="animated fadeInDown" style={{animationDelay:'1s'}}>Some representative placeholder content for the first slide.</p>
-        <button className="animatedbtn"> Book now</button>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-
-<div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos provident quaerat, odio adipisci magnam ad consequuntur qui amet optio nesciunt architecto nulla cupiditate voluptate ea cumque natus, sed assumenda eum!</div>
-    </div>
-
-    
-
-    
   );
 };
 
